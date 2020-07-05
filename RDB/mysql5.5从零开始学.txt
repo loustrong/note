@@ -1,0 +1,41 @@
+数据库是一个长期存储在计算机的，有组织的，有共享统一管理的数据集合，它是一个按数据结构来存储和管理数据的计算机软件系统。
+包含两层含义：报关数据的"仓库"，以及数据管理的方法和技术
+数据库表是一系列二维数组的结合，用来存储数据和操作数据的逻辑结构
+他由纵向的列和横向的行组成，行被称为记录，是组织数据的单位；列被称为字段，
+每一列表示记录的一个属性，都有详细的描述信息，如数据类型，数据宽度等;
+数据类型决定了数据在计算机中的存储格式，代表不同的信息类型。
+常用的数据类型为:整数数据类型，浮点数数据类型，精确小数类型，二进制数据类型，
+日期/时间数据类型，字符串数据类型
+表中的字段需要指定某种数据类型
+主键:Primary key 又称主码，用于唯一地标识表中的每一条记录。可以定义表中的一列或多列为主键
+主键列上不能有两行形同的值，也不能有空值。
+SQL语言包括:
+1.数据定义语言(DDL):DROP,CREATE,ALTER等语句。
+2.数据操作语言（DML）:INSERT(插入),UPDATE(更新),DELETE(删除)等语句
+3.数据查询语言（DQL）:SELECT语句
+4.数据控制语言（DCL）:GRANT,REVOKE,COMMIT,ROLLBACK等语言
+-- 创建table
+CREATE TABLE stuedents(
+	student_id INT UNDIGNED,
+	name VARCHAR(10),
+	sex CHAR(1),
+	birth DATE,
+	PRIMARY KEY(student_id)
+);
+-- 插入记录
+INSERT INTO students(student_id, name,sex, birth) VALUES(41048101, 'Lucy Green', '1', '1990-02-14');
+-- 查询记录
+SELECT name FROM students WHERE student_id=41048101;
+
+ODBC: Open Database Connectivity（开放数据库互连）
+
+
+
+
+
+
+
+
+
+
+

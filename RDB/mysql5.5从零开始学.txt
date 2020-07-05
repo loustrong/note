@@ -27,7 +27,95 @@ INSERT INTO students(student_id, name,sex, birth) VALUES(41048101, 'Lucy Green',
 -- 查询记录
 SELECT name FROM students WHERE student_id=41048101;
 
-ODBC: Open Database Connectivity（开放数据库互连）
+ODBC: Open Database Connectivity（开放数据库互连）技术为访问不同的SQL数据库提供了一个共同的接口。
+ODBC使用sql作为访问数据库的标准，这一接口提供了最大限度的互操作性。
+一个基于ODBC的应用程式对数据库的操作不依赖于任何DBMS,不直接与DBMS打交道，所有的数据库操作由对应的DBMS的ODBC驱动程序完成。
+
+mysql服务器端实用工具程序如下:
+1.mysqld: SQL后台程序(即MYSQL服务器进程)；
+2.mysqls_safe:服务器启动脚本，增加了安全特性
+3.mysql.server服务器启动脚本,用于使用包含为特定级别的,运行启动服务的脚本的，运行目录的系统,它是调用mysql_safe来启动服务器
+4.mysqld_multi 服务器启动脚本，可以启动或停止系统上安装的多个服务器
+5.myisamchk:用来描述，检查，优化和维护MyISAM表的实用工具
+6.mysqlbug:报告bug
+7.mysql_install_db:该脚本 使用默认权限创建MYSQL授权表，通常是在首次安装时执行
+Mysql客户端实用命令
+1.myisampack:压缩MyISAM表以产生更小的只读表的一个工具
+2.mysql:交互式输入SQL语句或从文件以批次处理模式执行他们的命令的工具
+3.mysqlaccess:检查访问主机名,用户名和数据库组合的权限的脚本
+4.mysqladmin:执行管理操作的客户程序,例如创建和删除数据库，重载授权，将表刷新到硬盘,以及重新打开日志文件.
+    mysqladmin还可以用来检索版本，进程，以及服务器的状态信息.
+5.mysqlbinlog:从二进制读取语句的工具。在二進制日誌文件中包含執行過的語句，可以用來幫助系統從崩潰中恢復
+6.mysqlcheck:檢查修復分析及優化表的表維護客戶程序。
+7.mysqldump:將mysql數據庫轉儲到一個文件(例如SQL語句或tab分隔符文本文件)的客戶程序
+8.mysqlhotcopy:當服務器在運行的時候,快速備份MyISAM或者ISAM表的工具
+9.mysqlimport:使用LOAD DATA INFILE將文本文件導入相關表的客戶程序
+10.mysqlshow:顯示數據庫，表，列以及索引相關信息的客戶程序
+
+多寫MYSQL語句，對於相同的功能，多使用不同的實現語句來完成
+
+-- 查看當前所有存在的數據庫
+SHOW DATABASES;
+
+-- 創建數據庫
+CREATE DATABASE tom_test;
+-- 查看創建好的數據庫tom_test
+SHOW CREATE DATABASE tom_test\G;
+
+-- 刪除數據庫
+DROP DATABASE tom_test;
+
+數據庫存儲引擎是數據庫底層軟件組件，數據庫管理系統（DBMS）使用數據引擎進行創建，查詢，更新和刪除數據操作。
+不同的數據庫引擎提供不同的存儲機制，索引技巧和鎖定水平等
+Mysql的核心是存儲引擎
+MYSQL支持的存儲引擎是InnoDB,MyISAM,Memory,Merge，Archive,Federated,CSV,BLACKHOLE.
+-- 查看系統所支持的引擎類型
+SHOW ENGINES\G;
+-- 查看默認的存儲引擎
+SHOW VARIABLES LIKE 'storage_engine';
+InnoDB事務型數據庫引擎，支持事務安全表(ACID),支持行鎖定和外鍵。InnoDB為默認存儲引擎.特性主要包括:
+1. InnoDB給Mysql提供了具有提交，回滾和崩潰恢復能力的事務安全(ACID兼容)存儲引擎。InnoDB鎖定在行級並且也在SELECT語句中
+提供一個類似Oracle的非鎖定讀。這些功能增加了多用戶部署和性能。在SQL查詢中，可以自由地將InnoDB類型的表與其他Mysql引擎的
+表混合起來，甚至在同一個查詢中也可以混合。
+2.InnoDB是為處理巨大數據量的最大性能設計。它的CPU效率可能是任何其他基於磁盤的關係數據庫引擎所不能匹敵的。
+3.InnoDB存儲引擎完全與Mysql服務器整合,InnoDB存儲引擎為主內存中緩存數據和索引而維持他自己的緩衝池。
+4.InnoDB支持外鍵完整性約束。如果沒有顯式在表定義時指定主鍵，InnoDB會為每一行生成6個字節的ROWID，並以此作為主鍵;
+5.InnoDB被用在眾多需要高性能的大型數據庫站點上。在使用InnoDB時，MYSQL將在MYSQL數據目錄下創建一個名為ibdata1的10MB大小的自動擴展數據文件，
+以及兩個名為ib_logfile0和ib_logfile1的5MB大小的日誌文件
+MYISAM存儲引擎:
+MYISAM存儲引擎基於ISAM存儲引擎,並對其進行擴展。他是在WEB，數據倉儲和其他應用環境下最常使用的存儲引擎。
+MYISAM擁有較高的插入和查詢速度，但不支持事務。
+MYISAM存儲引擎主要特性有:
+1.大文件(達63位文件長度)在支持大文件系統上支持
+2.當把刪除和更新及插入操作混合使用的時候，動態尺寸的行產生更少的碎片
+3.表最大的索引樹是64個，可以通過重新編譯來實現。每個索引最大的列數是16個
+4.鍵的最大長度是1000字節
+5.BLOB和TEXT列可以被索引
+6.NULL值列可以被索引
+....
+該引擎創建的數據庫將產生3個文件，文件名以表的名字開始:FRM文件存儲表的定義，數據文件的擴展名為.MYD(MYData)，索引文件的擴展名.MYI(MYIndex)
+
+如果要提供提交，回滾和崩潰恢復能力的事務安全(ACID兼容)能力，並要求實現並發控制，InnoDB是很好的選擇
+如果數據庫表主要用來插入和查詢記錄，則MyISAM引擎能提供較高的處理效率
+如果只是臨時存儲數據且數據量不大，不要安全性，可以選擇Memory引擎。
+如果只有INSERT和SELECT操作，可以選擇Archive引擎，支持高並發的插入操作，但本身不是事務安全的，適合存儲歸檔數據，如記錄指日信息可以使用Archive引擎。
+在一個數據庫中可以使用不同引擎以滿足各種性能和實際需求。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

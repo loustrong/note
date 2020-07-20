@@ -1,0 +1,17 @@
+
+isExistPromise()
+.then(
+    ()=> return deleteFilePromise() //调用下一个Promise
+)
+.then(
+    ()=>{ console.log('----')；
+    // 手动抛送错误
+    throw new Error('手动终止');
+    return new Promise.reject()?
+    }
+)
+.catch(
+ err=> console.error(err)
+)
+
+nodemon自动刷新运行代码

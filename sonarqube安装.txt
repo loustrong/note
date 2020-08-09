@@ -1,0 +1,112 @@
+下载安装包
+https://www.postgresql.org/download/linux/redhat/
+https://www.enterprisedb.com/download-postgresql-binaries
+
+相关配置
+https://blog.csdn.net/weixin_42657158/article/details/99001137
+
+创建用户
+sudo useradd postgres
+sudo passwd postgres
+设定权限
+sudo mkdir /chinamobile/work/postgresql/data
+sudo mkdir /chinamobile/work/postgresql/log
+sudo chown -R postgres:postgres /chinamobile/work/postgresql
+
+配置环境变量
+编写profile
+sudo vim /etc/profile
+
+追加下面内容
+export PGDATA=/chinamobile/work/postgresql/data
+export PGHOME=/chinamobile/work/postgresql
+export PGPORT=9527
+export PATH=$PGHOME/bin:$PATH
+
+生效配置
+
+source /etc/profile
+初始化数据库
+切换到postgres用户
+sudo su - postgres
+初始化数据库
+initdb
+
+配置数据库
+cd /chinamobile/work/postgresql/data
+配置对数据库的访问控制（设置为可以通过密码访问）
+vim pg_hba.conf
+更改为
+# IPv4 local connections:
+# host    all             all             127.0.0.1/32            trust
+host    all             all             0.0.0.0/0               trust
+
+配置数据库参数（设置服务器监听整个网络，设置端口号为9527)
+vim postgresql.conf
+更改为
+listen_addresses = '*'
+port = 9527
+
+
+退出postgres
+
+exit
+
+开放9527端口
+新增开放9527端口号
+
+sudo firewall-cmd --zone=public --add-port=9527/tcp --permanent
+
+重启防火墙开机
+
+sudo systemctl restart firewalld.service
+
+配置系统服务
+进入postgresql的解压目录
+
+cd /chinamobile/soft/postgresql-11.4
+
+sudo cp contrib/start-scripts/linux /etc/init.d/postgresql
+
+sudo vim /etc/init.d/postgresql
+
+更改为
+
+# Installation prefix
+prefix=/chinamobile/work/postgresql
+
+# Data directory
+PGDATA="/chinamobile/work/postgresql/data"
+
+# Who to run the postmaster as, usually "postgres".  (NOT "root")
+PGUSER=postgres
+
+# Where to keep a log file，if log does not exist, create it and grante the privilige
+PGLOG="/chinamobile/work/postgresql/log/serverlog"
+
+# 自启动脚本安装
+#找到源代码安装包https://www.postgresql.org/ftp/source/v10.13/
+#解压安装包，在contibute
+赋予文件执行权限
+sudo chmod +x /etc/init.d/postgresql
+设定服务开机自启
+sudo chkconfig --add postgresql
+
+启动及连接数据库
+启动数据库服务
+service postgresql start
+命令行连接数据库
+sudo su - postgres
+psql
+#下载PGadmin4作为客户端链接PG
+
+Zulu Openjdk11安装
+安装包地址：
+Zulu OpenJDK Discovery API
+curl -H "Accept: application/json" "https://api.azul.com/zulu/download/community/v1.0/bundles/"
+jdk包的cdn地址
+#安装sonarqube
+修改配置文件
+https://docs.sonarqube.org/latest/requirements/requirements/
+https://docs.sonarqube.org/latest/setup/operate-server/
+https://docs.sonarqube.org/latest/setup/install-server/

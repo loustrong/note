@@ -110,3 +110,11 @@ jdk包的cdn地址
 https://docs.sonarqube.org/latest/requirements/requirements/
 https://docs.sonarqube.org/latest/setup/operate-server/
 https://docs.sonarqube.org/latest/setup/install-server/
+
+sonar.junit.reportPaths
+	This property works for Java projects only.	target/surefire-reports, myModule/target/surefire-reports	
+Import tests execution reports (Surefire XML format).
+
+Set the property with a list of comma-separated paths to the directories containing the XML reports.
+
+

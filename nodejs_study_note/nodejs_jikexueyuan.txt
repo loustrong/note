@@ -14,5 +14,16 @@
   pomelo
   mocha
   fibjs
+  express
+  body-parse:解析请求body的表单信息
+  
+  指定node啟動pm2
+  sudo pm2 start app.js --interpreter=/home/ken/.nvm/v4.4.2/bin/node
+
+  開發常見的坑:
+  1.JS的弱類別;
+  2.JS Object的Shallow Copy和Deep Copy和Deep
+  3.異步處理
+  4.this
   
   

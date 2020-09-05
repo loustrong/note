@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fb28fed-62eb-455c-a088-11c0f5199469" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.scannerwork/.sonar_lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.scannerwork/report-task.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaUnitSonar.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wistron/wcd/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wistron/wcd/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wistron/wcd/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wistron/wcd/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wistron/wcd/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wistron/wcd/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/javaUnitSonar-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/javaUnitSonar-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/report-task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/report-task.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wistron.wcd.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wistron.wcd.AppTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wistron.wcd.CalculatorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.wistron.wcd.CalculatorTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.wistron.wcd.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.wistron.wcd.AppTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.wistron.wcd.CalculatorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.wistron.wcd.CalculatorTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../nodejs_study_note/nodejs_jikexueyuan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../nodejs_study_note/nodejs_jikexueyuan.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wistron/wcd/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/wistron/wcd/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wistron/wcd/CalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/wistron/wcd/CalculatorTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +34,7 @@
     </execution>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="168" />
+    <option name="myElementSize" value="89" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -68,7 +68,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -85,7 +85,7 @@
   <component name="RunManager" selected="JUnit.AppTest.shouldAnswerWithTrue">
     <configuration name="AppTest.shouldAnswerWithTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaUnitSonar" />
-      <extension name="coverage">
+      <extension name="coverage" runner="jacoco">
         <pattern>
           <option name="PATTERN" value="com.wistron.wcd.*" />
           <option name="ENABLED" value="true" />
@@ -95,6 +95,7 @@
       <option name="MAIN_CLASS_NAME" value="com.wistron.wcd.AppTest" />
       <option name="METHOD_NAME" value="shouldAnswerWithTrue" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,10 +112,15 @@
       <option name="MAIN_CLASS_NAME" value="com.wistron.wcd.CalculatorTest" />
       <option name="METHOD_NAME" value="testAdd" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.AppTest.shouldAnswerWithTrue" />
+      <item itemvalue="JUnit.CalculatorTest.testAdd" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AppTest.shouldAnswerWithTrue" />
@@ -133,6 +139,13 @@
       <option name="presentableId" value="Default" />
       <updated>1598406204857</updated>
       <workItem from="1598406206334" duration="4747000" />
+      <workItem from="1598456119636" duration="1967000" />
+      <workItem from="1598492595062" duration="7203000" />
+      <workItem from="1598519301723" duration="17000" />
+      <workItem from="1598581561811" duration="1508000" />
+      <workItem from="1598597783735" duration="121000" />
+      <workItem from="1598663075344" duration="83000" />
+      <workItem from="1598679201841" duration="13000" />
     </task>
     <servers />
   </component>
@@ -144,7 +157,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -154,10 +169,16 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/javaUnitSonar$CalculatorTest_testAdd.ic" NAME="CalculatorTest.testAdd Coverage Results" MODIFIED="1598406909222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/javaUnitSonar$CalculatorTest_testAdd.ic" NAME="CalculatorTest.testAdd Coverage Results" MODIFIED="1598501079870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.wistron.wcd.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/javaUnitSonar$AppTest_shouldAnswerWithTrue.ic" NAME="AppTest.shouldAnswerWithTrue Coverage Results" MODIFIED="1598407340326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/javaUnitSonar$AppTest_shouldAnswerWithTrue.ic" NAME="AppTest.shouldAnswerWithTrue Coverage Results" MODIFIED="1598504767138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.wistron.wcd.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/javaUnitSonar$CalculatorTest_testAdd.exec" NAME="CalculatorTest.testAdd Coverage Results" MODIFIED="1598509127157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.wistron.wcd.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/javaUnitSonar$AppTest_shouldAnswerWithTrue.exec" NAME="AppTest.shouldAnswerWithTrue Coverage Results" MODIFIED="1598509159166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.wistron.wcd.*</FILTER>
     </SUITE>
   </component>

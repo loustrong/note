@@ -1,6 +1,6 @@
 projectKey=com.wistron.wcd:javaUnitSonar
 serverUrl=http://10.62.240.46:9000
-serverVersion=8.4.1.35646
+serverVersion=8.2.0.32929
 dashboardUrl=http://10.62.240.46:9000/dashboard?id=com.wistron.wcd%3AjavaUnitSonar
-ceTaskId=AXQoxMHEUd9FYSURJBIN
-ceTaskUrl=http://10.62.240.46:9000/api/ce/task?id=AXQoxMHEUd9FYSURJBIN
+ceTaskId=AXQ5Uoishe4Fmk4TdlIq
+ceTaskUrl=http://10.62.240.46:9000/api/ce/task?id=AXQ5Uoishe4Fmk4TdlIq

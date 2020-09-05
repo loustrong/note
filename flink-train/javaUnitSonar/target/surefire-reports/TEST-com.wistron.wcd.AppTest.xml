@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.wistron.wcd.AppTest" time="0.003" errors="0" skipped="0">
+<testsuite tests="0" failures="0" name="com.wistron.wcd.AppTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="sun.boot.library.path" value="D:\ProgramFiles\Zulu\zulu-8\jre\bin"/>
-    <property name="java.vm.version" value="25.172-b01"/>
-    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="11.0.7+10-LTS"/>
+    <property name="sun.boot.library.path" value="D:\ProgramFiles\Zulu\zulu-11\bin"/>
+    <property name="jdk.vendor.version" value="Zulu11.39+15-CA"/>
     <property name="maven.multiModuleProjectDirectory" value="D:\GitHub\note\flink-train\javaUnitSonar"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
     <property name="java.vendor.url" value="http://www.azulsystems.com/"/>
-    <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
-    <property name="user.country" value="TW"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="TW"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="D:\GitHub\note\flink-train\javaUnitSonar"/>
-    <property name="java.runtime.version" value="1.8.0_172-b01"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.7+10-LTS"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="D:\ProgramFiles\Zulu\zulu-8\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\D14052~1\AppData\Local\Temp\"/>
     <property name="line.separator" value="
@@ -27,43 +27,47 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="maven.ext.class.path" value="D:\Program Files\JetBrains\ideaIU-2019.2.2.win\plugins\maven\lib\maven-event-listener.jar"/>
-    <property name="classworlds.conf" value="D:\Users\apache-maven-3.6.1\bin\m2.conf"/>
+    <property name="classworlds.conf" value="D:\Users\apache-maven-3.6.1\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="MS950"/>
-    <property name="java.library.path" value="D:\ProgramFiles\Zulu\zulu-8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\ProgramFiles\Zulu\zulu-8\bin\;D:\ProgramFiles\Zulu\zulu-8\bin;D:\ProgramFiles\Zulu\zulu-8\jre\bin;D:\ProgramFiles (x86)\scala\bin;D:\ProgramFiles (x86)\scala\bin;D:\ProgramFiles\nodejs\;D:\oracle\ODAC_64;D:\oracle\ODAC_64\bin;D:\oracle\ODAC_32;D:\oracle\ODAC_32\bin;D:\Users\apache-maven-3.6.1\bin;D:\Users\gradle-5.5.1\bin;D:\ProgramFiles\Git\cmd;D:\Users\instantclient-basic-windows.x64-12.2.0.1.0\instantclient_12_2;D:\Users\apache-tomcat-8.5.43\bin;%JRE_HOME%\jre\jre;D:\ProgramFiles\Zulu\zulu-8;D:\Users\curl\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\proto3\bin;D:\Users\Android-SDK\tools;D:\Users\Android-SDK\platform-tools;D:\Program Files\Microsoft VS Code\bin;C:\ProgramData\chocolatey\bin;D:\Go\bin;D:\Go\bin;D:\Users\sonar-scanner\bin;E:\users\php-5.6.40-Win32-VC11-x64;E:\users\php-5.6.40-Win32-VC11-x64\ext;E:\users\mysql-5.6.48\bin;D:\Users\sonar-scanner\bin;C:\Users\D14052172\AppData\Local\Microsoft\WindowsApps;C:\Users\D14052172\AppData\Roaming\npm;C:\Users\D14052172\.dotnet\tools;D:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2.2\bin;;C:\Users\D14052172\go\bin;D:\Program Files\JetBrains\IntelliJ IDEA 2018.3.5\bin;;;."/>
-    <property name="maven.conf" value="D:\Users\apache-maven-3.6.1/conf"/>
+    <property name="sonar.login" value="8397debd8c0c14116334dc6d98acc70cdb2b46e3"/>
+    <property name="java.library.path" value="D:\ProgramFiles\Zulu\zulu-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\ProgramFiles\Zulu\zulu-11\bin\;D:\ProgramFiles\Zulu\zulu-11\bin;D:\ProgramFiles\Zulu\zulu-11\jre\bin;D:\ProgramFiles (x86)\scala\bin;D:\ProgramFiles (x86)\scala\bin;D:\ProgramFiles\nodejs\;D:\oracle\ODAC_64;D:\oracle\ODAC_64\bin;D:\oracle\ODAC_32;D:\oracle\ODAC_32\bin;D:\Users\apache-maven-3.6.1\bin;D:\Users\gradle-5.5.1\bin;D:\ProgramFiles\Git\cmd;D:\Users\instantclient-basic-windows.x64-12.2.0.1.0\instantclient_12_2;D:\Users\apache-tomcat-8.5.43\bin;%JRE_HOME%\jre;D:\ProgramFiles\Zulu\zulu-11;D:\Users\curl\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\proto3\bin;D:\Users\Android-SDK\tools;D:\Users\Android-SDK\platform-tools;D:\Program Files\Microsoft VS Code\bin;C:\ProgramData\chocolatey\bin;D:\Go\bin;D:\Go\bin;D:\Users\sonar-scanner\bin;E:\users\php-5.6.40-Win32-VC11-x64;E:\users\php-5.6.40-Win32-VC11-x64\ext;E:\users\mysql-5.6.48\bin;D:\Users\sonar-scanner\bin;D:\Users\apache-jmeter\bin;C:\Users\D14052172\AppData\Local\Microsoft\WindowsApps;C:\Users\D14052172\AppData\Roaming\npm;C:\Users\D14052172\.dotnet\tools;D:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2.2\bin;;C:\Users\D14052172\go\bin;D:\Program Files\JetBrains\IntelliJ IDEA 2018.3.5\bin;;;."/>
+    <property name="maven.conf" value="D:\Users\apache-maven-3.6.1\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="maven.repo.local" value="D:\Users\apache-maven-3.6.1\mvnRepority"/>
     <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="D:\Users\apache-maven-3.6.1\bin\..\lib\jansi-native"/>
     <property name="user.home" value="C:\Users\D14052172"/>
     <property name="user.timezone" value="Asia/Shanghai"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="sonar.host.url" value="http://10.62.240.46:9000"/>
+    <property name="file.encoding" value="MS950"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="org.sonar.plugins.jmeter.jtlpath" value="result.jtl"/>
     <property name="user.name" value="D14052172"/>
-    <property name="java.class.path" value="D:\Users\apache-maven-3.6.1\boot\plexus-classworlds-2.6.0.jar;D:\Program Files\JetBrains\ideaIU-2019.2.2.win\lib\idea_rt.jar"/>
-    <property name="idea.version2019.2.2" value="true"/>
-    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="java.class.path" value="D:\Users\apache-maven-3.6.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="D:\ProgramFiles\Zulu\zulu-8\jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.2.2 -s D:\Users\apache-maven-3.6.1\conf\settings.xml -Dmaven.repo.local=D:\Users\apache-maven-3.6.1\mvnRepority verify"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify sonar:sonar -Dsonar.host.url=http://10.62.240.46:9000 -Dsonar.login=8397debd8c0c14116334dc6d98acc70cdb2b46e3 -Dsonar.analysis.mode=publish -Dorg.sonar.plugins.jmeter.jtlpath=result.jtl"/>
+    <property name="java.home" value="D:\ProgramFiles\Zulu\zulu-11"/>
     <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_172"/>
-    <property name="java.ext.dirs" value="D:\ProgramFiles\Zulu\zulu-8\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="D:\ProgramFiles\Zulu\zulu-8\jre\lib\resources.jar;D:\ProgramFiles\Zulu\zulu-8\jre\lib\rt.jar;D:\ProgramFiles\Zulu\zulu-8\jre\lib\sunrsasign.jar;D:\ProgramFiles\Zulu\zulu-8\jre\lib\jsse.jar;D:\ProgramFiles\Zulu\zulu-8\jre\lib\jce.jar;D:\ProgramFiles\Zulu\zulu-8\jre\lib\charsets.jar;D:\ProgramFiles\Zulu\zulu-8\jre\lib\jfr.jar;D:\ProgramFiles\Zulu\zulu-8\jre\classes"/>
+    <property name="java.version" value="11.0.7"/>
     <property name="java.vendor" value="Azul Systems, Inc."/>
-    <property name="maven.home" value="D:\Users\apache-maven-3.6.1"/>
+    <property name="sun.stderr.encoding" value="ms950"/>
+    <property name="maven.home" value="D:\Users\apache-maven-3.6.1\bin\.."/>
     <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2020-04-14"/>
     <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/"/>
-    <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Zulu11.39+15-CA"/>
+    <property name="sun.stdout.encoding" value="ms950"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sonar.analysis.mode" value="publish"/>
   </properties>
-  <testcase classname="com.wistron.wcd.AppTest" name="shouldAnswerWithTrue" time="0.003"/>
 </testsuite>

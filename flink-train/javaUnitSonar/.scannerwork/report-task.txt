@@ -1,6 +1,0 @@
-projectKey=sonarScanJavaTest
-serverUrl=http://10.62.240.46:9000
-serverVersion=8.4.1.35646
-dashboardUrl=http://10.62.240.46:9000/dashboard?id=sonarScanJavaTest
-ceTaskId=AXQodR3vUd9FYSURJBH6
-ceTaskUrl=http://10.62.240.46:9000/api/ce/task?id=AXQodR3vUd9FYSURJBH6

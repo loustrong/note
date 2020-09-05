@@ -1,0 +1,1 @@
+pm2 start --cron '*/40 * * * *'  --no-autorestart server/server.js --name="smtAPI" --interpreter=/usr/local/node-v10.16.2/bin/node

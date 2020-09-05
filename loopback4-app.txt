@@ -1,0 +1,17 @@
+lb4 discover --schema tom_lou
+--dataSource: Put a valid datasource name here to skip the datasource prompt
+--views: Choose whether to discover views. Default is true
+--all: Skips the model prompt and discovers all of them
+--outDir: Specify the directory into which the model.model.ts files will be placed. Default is src/models
+--schema: Specify the schema which the datasource will find the models to discover
+
+
+openapi-generator generate -i openapi.yml -g typescript-angular -o generated-sources/openapi --additional-properties=npmName=restClient,supportsES6=true,withInterfaces=true
+
+npm install -g openapi-generator
+npm install -g json2yaml
+json2yaml  openapi.json > openapi.yml
+
+openapi
+
+

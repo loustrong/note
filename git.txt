@@ -1,0 +1,12 @@
+
+##遠程倉庫相關
+git remote 查看所有远程仓库， git remote xxx 查看指定远程仓库地址
+命令行修改遠程倉庫地址也可以在配置文件裡面修改
+git remote set-url origin http://192.168.100.235:9797/john/git_test.git
+#移除掉遠程倉庫
+git remote rm origin
+增加遠程倉庫
+git remote add origin http://192.168.100.235:9797/john/git_test.git
+gitlab項目轉移到倉庫內
+在項目的setting裡面選擇general-->advance --> Transfer
+
